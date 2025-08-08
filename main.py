@@ -41,6 +41,8 @@ def main()->None:
     dispatcher.add_handler(MessageHandler(Filters.contact,Menu.Bosh_menu02))
     dispatcher.add_handler(MessageHandler(Filters.text("⬅️ Orqaga"),Menu.Bosh_menu))
     dispatcher.add_handler(MessageHandler(Filters.text("🖊️ Fikr qoldirish"),idea.handler_idea))
+    dispatcher.add_handler(MessageHandler(Filters.text,Menu.Bosh_menu03))
+
 
     
    

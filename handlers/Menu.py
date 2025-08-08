@@ -28,3 +28,17 @@ def Bosh_menu02(update: Update, context: CallbackContext):
             one_time_keyboard=True
         )
     )
+
+def Bosh_menu03(update: Update, context: CallbackContext):
+    update.message.reply_text(
+        text="Fikr qoldirganiz uchun tashakkur!",
+        reply_markup=ReplyKeyboardMarkup(
+            keyboard=[
+                [KeyboardButton("🛍️ Buyurtma berish", web_app=WebAppInfo("https://asaxiy.uz/"))],
+                [KeyboardButton("📦 Buyurtmalarim"), KeyboardButton("⚙️ Sozlamalar")],
+                [KeyboardButton("ℹ️ Biz haqimizda"), KeyboardButton("🖊️ Fikr qoldirish")]
+            ],
+            resize_keyboard=True,
+            one_time_keyboard=True
+        )
+    )
