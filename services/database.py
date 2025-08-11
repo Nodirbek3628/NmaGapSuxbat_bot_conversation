@@ -42,6 +42,7 @@ class DB:
 
     def get_user(self, chat_id: str):
         return self.__data['users'].get(str(chat_id))
+        
 
     def get_data(self):
         return self.__data
